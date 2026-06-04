@@ -8,10 +8,6 @@ export function initFiltering(elements, indexes) {
   // @todo: #4.1 — заполнить выпадающие списки опциями
   Object.keys(indexes).forEach((indexName) => {
     if (indexName === 'sellers') {
-        const allOption = document.createElement('option');
-        allOption.value = '';
-        allOption.textContent = 'Все';
-
         const options = Object.values(indexes[indexName]).map(name => {
             const option = document.createElement('option');
             option.value = name;
@@ -20,7 +16,6 @@ export function initFiltering(elements, indexes) {
         });
 
         const searchBySellerElement = elements.searchBySeller;
-        searchBySellerElement.appendChild(allOption);
         options.forEach(option => searchBySellerElement.appendChild(option));
     }
   });
