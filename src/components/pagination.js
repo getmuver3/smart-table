@@ -50,7 +50,7 @@ export const initPagination = (
         return createPage(el, pageNumber, pageNumber === page);
       })
     );
-    console.log(pages)
+    
     // @todo: #2.5 — обновить статус пагинации
     fromRow.textContent = (page - 1) * limit + 1;
     toRow.textContent = Math.min(page * limit, total);
