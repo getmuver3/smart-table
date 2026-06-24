@@ -14,7 +14,7 @@ export function initSorting(columns) {
 
     const sort = (field && order !== 'none') ? `${field}:${order}` : null;
     
-    // @todo: #3.2 — сбросить сортировки остальных колонок
+    
 
     columns.forEach((column) => {
       if (column.dataset.field !== action.dataset.field) {

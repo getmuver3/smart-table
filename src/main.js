@@ -63,7 +63,7 @@ const sampleTable = initTable(
   render
 );
 
-// @todo: инициализация
+// @todo: инициализация.
 const { applyPagination, updatePagination } = initPagination(
   sampleTable.pagination.elements, // передаём сюда элементы пагинации, найденные в шаблоне
   (el, page, isCurrent) => {
